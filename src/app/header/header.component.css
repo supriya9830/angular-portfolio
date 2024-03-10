@@ -1,0 +1,42 @@
+.logo{
+    width: 30px;
+    height: 39px;
+    border-radius: 8px;
+    margin-left: 6px;
+}
+nav {
+    background-color: azure;
+    color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 2%;
+    /* gap: 10px;
+    text-align: right; */
+}   
+nav ul li{
+    display: inline;
+    margin: 10px 20px;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: blue;
+    position: absolute;
+    left: 0;
+    margin-top: 2px;
+    bottom: -5px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+li{
+    color:darkorchid;
+}

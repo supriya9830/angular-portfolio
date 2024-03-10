@@ -1,0 +1,24 @@
+.resume {
+    width: 50%;
+    border: 2px solid white;
+    border-radius: 4px;
+    color: white;
+    background-color: cornflowerblue;
+    height: 50px;
+    text-decoration: none;
+    padding: 5px;
+    margin-left: 3.5%;
+}
+
+p {
+    margin-left: 3.5%;
+}
+
+li {
+    list-style: none;
+    padding: 1%;
+}
+
+.personalInfo {
+    padding: 5%;
+}
