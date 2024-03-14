@@ -9,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class ContactMeComponent {
   mailId = 'supriyamohan98@gmail.com';
+  at = '@';
 }

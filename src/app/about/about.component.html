@@ -10,11 +10,11 @@
         From responsive layouts to seamless animations, I thrive on turning ideas into pixel-perfect designs that engage
         and delight
         users.
-        <!-- <br><br> -->
-        <!-- I'm fluent in HTML, CSS, JavaScript, and Angular framework. Whether it's optimizing performance, ensuring
+        <br><br>
+        I'm fluent in HTML, CSS, JavaScript, and Angular framework. Whether it's optimizing performance, ensuring
         cross-browser compatibility, or implementing accessible design principles, I'm committed to delivering solutions
         that not only
-        meet but exceed client expectations. -->
+        meet but exceed client expectations.
         <!-- <br><br> -->
         <!-- My approach to development is rooted in collaboration and communication. I enjoy working closely with designers,
         backend developers, and stakeholders to bring concepts to life and achieve project goals efficiently and
@@ -26,19 +26,39 @@
         <!-- If you're looking for a frontend developer who's not only skilled but also passionate about their craft, I'd
         love to chat about how we can collaborate on your next project. Let's build something awesome together! -->
     </p>
-    <div class="tab-titles">
-        <p class="tab-links" (click)="showContent('skills')">Skills</p>
-        <p class="tab-links" (click)="showContent('experience')">Experience</p>
-        <p class="tab-links" (click)="showContent('education')">Education</p>
+    <div>&nbsp;</div>
+    <div>
+        <p class="data-tab">Experience</p>
+        <ul>
+            <li><span>HCLTech - Senior Analyst 2021 to present</span><br>Being consistentlty developing different application also providing them
+            to client without delay. Solving issues to make the application work faster.</li>
+        </ul>
     </div>
-    <br>
-    <div class="tab-contents show-tab" *ngIf="showSkills">
+    <div>
+        <p class="data-tab">Skills</p>
         <ul>
             <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
             <li><span>Languages Used</span><br>Angular, HTML, CSS, JavaScript</li>
             <li><span>Web/Application Development</span></li>
-            <!-- <li>CSS</li>
-            <li>JAVASCRIPT</li> -->
+        </ul>
+    </div>
+    <div>
+        <p class="data-tab">Education</p>
+        <ul>
+            <li><span>2023 - 2021</span><br>Master of Adminstartion - General</li>
+            <li><span>2020 - 2016</span><br>Bachelor Of Engineering - Computer Science and Engineering</li>
+        </ul>
+    </div>
+    <!-- <div class="tab-titles">
+        <p class="tab-links active" (change)="showContent('skills')">Skills</p>
+        <p class="tab-links" (change)="showContent('experience')">Experience</p>
+        <p class="tab-links" (click)="showContent('education')">Education</p>
+    </div> -->
+    <!-- <div class="tab-contents show-tab" *ngIf="showSkills">
+        <ul>
+            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+            <li><span>Languages Used</span><br>Angular, HTML, CSS, JavaScript</li>
+            <li><span>Web/Application Development</span></li>
         </ul>
     </div>
     <div class="tab-contents" *ngIf="showExperience">
@@ -51,19 +71,5 @@
             <li><span>2023 - 2021</span><br>Master of Adminstartion - General</li>
             <li><span>2020 - 2016</span><br>Bachelor Of Engineering - Computer Science and Engineering</li>
         </ul>
-    </div>
-  
-    <!-- <div class="tab-titles">
-        <div class="tabs links">
-            <p class="titles">Skills</p>
-            <ul>
-                <li>Angular</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ul>
-        </div>
-        <div class="tabs links">Education</div>
-        <div class="tabs"></div>
     </div> -->
 </div>

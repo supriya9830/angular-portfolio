@@ -1,4 +1,3 @@
-import { style } from '@angular/animations';
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 // import {SupriyaMoh}
@@ -12,18 +11,18 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
   constructor() { }
-   showSkills = true; showExperience = false; showEducation = false;
+  showSkills = false; showExperience = true; showEducation = false;
 
   showContent(event: any) {
-    var showStyles = document.getElementsByClassName('tab-links');
     switch (event) {
       case 'skills': this.showSkills = true; this.showEducation = false; this.showExperience = false;
         break;
       case 'experience': this.showExperience = true; this.showSkills = false; this.showEducation = false;
         break;
-      case 'education': this.showEducation = true; this.showSkills= false; this.showExperience= false;
+      case 'education': this.showEducation = true; this.showSkills = false; this.showExperience = false;
         break;
     }
+    console.log("hii");
   }
   // dowloadResume() {
   //   // this.http.get('/SupriyaMohan_CV.pdf').subscribe((response: any) => {

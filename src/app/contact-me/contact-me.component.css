@@ -1,12 +1,12 @@
 .resume {
     width: 50%;
     border: 2px solid white;
-    border-radius: 4px;
+    border-radius: 10px;
     color: white;
     background-color: cornflowerblue;
     height: 50px;
     text-decoration: none;
-    padding: 5px;
+    padding: 8px;
     margin-left: 3.5%;
 }
 
@@ -16,9 +16,17 @@ p {
 
 li {
     list-style: none;
-    padding: 1%;
+    /* padding: 1%; */
 }
 
 .personalInfo {
-    padding: 5%;
+    margin: 5%;
+    margin-top: 0%;
+}
+
+img {
+    font-size: 4px;
+    width: 20px;
+    height: 10px;
+    border-radius: 10px;
 }

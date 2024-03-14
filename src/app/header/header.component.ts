@@ -4,18 +4,20 @@ import { HomeComponent } from '../home/home.component';
 import { RouterModule } from '@angular/router';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { ContactMeComponent } from '../contact-me/contact-me.component';
+import { ServiceComponent } from '../service/service.component';
 // import { RoutingModule } from '../app.routes';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [ HomeComponent, RouterModule, CommonModule],
+  imports: [HomeComponent, RouterModule, CommonModule, AboutComponent, ContactMeComponent, ServiceComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  constructor(public router : Router){}
-  redirectHome(){
-    this.router.navigate(['/home']);
+  constructor(public router: Router) { }
+  redirectHome() {
+    this.router.navigate(['']);
   }
 }

@@ -1,42 +1,61 @@
-.logo{
+.logo {
     width: 30px;
     height: 39px;
     border-radius: 8px;
     margin-left: 6px;
 }
-nav {
-    background-color: azure;
-    color: brown;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 2%;
+
+    /* position: fixed; */
     /* gap: 10px;
     text-align: right; */
-}   
-nav ul li{
+
+nav ul li {
     display: inline;
     margin: 10px 20px;
     list-style: none;
+    /* position: fixed; */
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
-    position: relative;
+    /* position: relative; */
 }
-nav ul li a::after{
+
+nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
     background: blue;
-    position: absolute;
+    /* position: absolute; */
     left: 0;
     margin-top: 2px;
     bottom: -5px;
     transition: 0.5s;
 }
-nav ul li a:hover::after{
+
+nav ul li a:hover::after {
     width: 100%;
 }
-li{
-    color:darkorchid;
+
+li {
+    color: darkorchid;
 }
+
+nav ul li a.active::after {
+    width: 100%;
+    cursor: none;
+}
+
+.menu{
+    background-color: azure;
+    color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 2%;
+    
+}
+/* nav ul li{
+    overflow-x: hidden;
+    position: fixed;
+} */

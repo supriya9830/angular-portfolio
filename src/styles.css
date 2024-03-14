@@ -2,14 +2,21 @@
 
 html,
 body {
-    height: 100%;
+    height: 100%; 
+    /* overflow: hidden; */
 }
 
 body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
-    background-image: linear-gradient( rgb(96, 151, 211), lightblue, white,cornflowerblue);
+    /* overflow-y: scroll; */
+    /* -ms-overflow-style: none; */
+   
+    /* background-image: linear-gradient( rgb(96, 151, 211), lightblue, white,cornflowerblue); */
     /* background-color:black;
     color: ghostwhite; */
+}
+body::-webkit-scrollbar{
+    display: none;
 }
 

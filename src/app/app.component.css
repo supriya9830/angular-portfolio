@@ -1,8 +1,10 @@
-.container{
+.container {
     padding: 1%;
-    background-color: cornflowerblue;
+    overflow-x: hidden;
+    /* background-color: cornflowerblue; */
 }
-.bgPic{
-background-size: cover;
-background-image: url('/assets/BlueWhite.webp');
+
+.bgPic {
+    background-size: cover;
+    background-image: url('/assets/BlueWhite.webp');
 }
