@@ -1,7 +1,11 @@
 <div>
     <nav class="menu">
         <img src="/assets/Logo.jpg" class="logo">
-        <li style="margin-left: -60cqmax; list-style: none; position: relative;">Supriya Mohan</li>
+        <li id="name-title">Supriya Mohan</li>
+        <!-- <li><a href="#home">Home</a></li>
+        <li><a href="#aboutMe">About Me</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li> -->
         <ul>
             <!-- <div routerLink="/">Home</div> -->
             <!-- <li><a [routerLink]="['/']"  class="active">Home</a></li>
@@ -16,8 +20,8 @@
     </nav>
 </div>
 <app-home id="home"></app-home>
-<div>&nbsp;</div>
+<!-- <div>&nbsp;</div> -->
 <app-about id="aboutMe"></app-about>
-<app-service></app-service>
+<app-service id="services"></app-service>
 <app-contact-me id="contact"></app-contact-me>
 <!-- <app-home *ngIf="router.url == '/home' || router.url == '/'"></app-home> -->

@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './contact-me.component.css'
 })
 export class ContactMeComponent {
-  mailId = 'supriyamohan98@gmail.com';
+  mailId = ' supriyamohan98@gmail.com';
   at = '@';
 }
