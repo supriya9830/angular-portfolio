@@ -6,7 +6,7 @@
     /* background-size: cover;
     background-position: center; */
     margin-left: 50%;
-    margin-top: 4%;
+    margin-top: -13%;
     /* overflow-x: hidden; */
     /* display: inline-block; */
     position: absolute;
@@ -76,9 +76,42 @@ button {
     height: 30px;
     border-radius: 4px;
 }
+
 /* .bgPic{
    display: inline-block;
    width: 100%;
    height:100%;
    z-index: 1;
 } */
+
+@media only screen and (max-width: 600px) {
+
+    .header-text {
+        margin-left: 0%;
+        padding-top: 8%;
+        font-size: 12px;
+        /* padding: 4%; */
+    }
+    span{
+        font-size: 12px;
+    }
+
+    p {
+        word-break: break-all;
+        margin-left: 0%;
+        padding: 1vw;
+    }
+
+    .MyPicture {
+        width: 100px;
+        height: 110px;
+        margin-top: -50%;
+        margin-left: 40%;
+    }
+
+    .smallLogo{
+        font-size: 5px;
+        width: 14px;
+        height: 20px;
+    }
+}

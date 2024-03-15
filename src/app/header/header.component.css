@@ -63,7 +63,7 @@ nav ul li a.active::after {
 }
 
 #name-title {
-    margin-left: -60%;
+    margin-left: -58%;
     list-style: none;
     position: relative;
     font-size: large;
@@ -71,6 +71,35 @@ nav ul li a.active::after {
         'Trebuchet MS', sans-serif;
     color: blue;
     /* position: fixed; */
+}
+
+@media only screen and (max-width: 600px) {
+    #menu {
+        width: 10%;
+        padding: 2vw;
+        position: fixed;
+        margin: 5vw;
+    }
+
+    nav ul li a {
+        font-size: medium;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0;
+        list-style: none;
+        /* position: fixed; */
+    }
+
+    #name-title {
+        display: none;
+    }
+
+    /* #name-title{ */
+    /* margin-left: 0; */
+    /* display: none;    */
+    /* } */
 }
 
 /* nav ul li{
