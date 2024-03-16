@@ -56,11 +56,16 @@ p {
     text-align: justify;
 }
 @media only screen and (max-width: 600px) {
+    h2{
+        font-size: small;
+    }
     .service {
-        display: flex;
-        grid-template-columns: auto;
+        display: grid;
+        grid-template-columns: auto; 
+        gap: 7%;
         column-gap: 5%;
         margin-top: 0%;
+        text-align: justify;
         /* padding: 1%; */
         /* grid-column: 12%; */
     }
