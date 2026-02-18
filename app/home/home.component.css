@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    padding-top: 90px;
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+
+.header-text {
+    font-size: 32px;
+    margin: 0;
+}
+
+span {
+    color: #083db8;
+    font-weight: 700;
+}
+
+p {
+    margin: 14px 0;
+    max-width: 520px;
+    line-height: 1.6;
+}
+
+
+.cta-buttons {
+    margin-top: 18px;
+}
+
+.btn {
+    background: #083db8;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-right: 12px;
+    display: inline-block;
+}
+
+.btn-outline {
+    border: 2px solid #083db8;
+    color: #083db8;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+.MyPicture {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+
+.connect {
+    margin-top: 22px;
+    font-weight: 600;
+}
+
+.social-row {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.smallLogo {
+    width: 36px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.instagram-link {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.postcard-popup {
+    visibility: hidden;
+    width: max-content;
+    max-width: 220px;
+    background-color: #fff8dc;
+    /* light postcard color */
+    color: #333;
+    border: 2px solid #f0c14b;
+    padding: 12px 18px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    position: absolute;
+    bottom: 140%;
+    /* above the icon */
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.postcard-popup::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    /* below the bubble */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: #f0c14b transparent transparent transparent;
+    /* matches border color */
+}
+
+.postcard-popup::before {
+    content: '';
+    position: absolute;
+    bottom: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 8px;
+    background-color: #fff8dc;
+    border: 2px solid #f0c14b;
+    border-radius: 50%;
+}
+
+.instagram-link:hover .postcard-popup {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 24px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-text {
+        font-size: 22px;
+    }
+
+    .MyPicture {
+        width: 180px;
+        height: 230px;
+    }
+
+    p {
+        max-width: 100%;
+    }
+}
+
+.projects-section {
+    padding: 60px 0;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.project-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.2s ease;
+    background: #ffffff;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+.tech {
+    font-size: 14px;
+    font-weight: 600;
+    color: #083db8;
+    margin: 10px 0;
+}
+
+.project-links {
+    margin-top: 12px;
+    display: flex;
+    gap: 14px;
+}
+
+.project-links a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #083db8;
+}

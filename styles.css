@@ -1,0 +1,37 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background-image: url('assets/BG.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+app-home,
+app-about,
+app-service,
+app-contact-me {
+  display: block;
+  scroll-margin-top: 80px;
+}
+:root {
+  --accent: #2563eb;      
+  --accent-dark: #1e40af;
+  --text-main: #111827;  
+  --text-soft: #6b7280;  
+  --bg-white: #ffffff;
+  --border-soft: #e5e7eb;
+}
+
+body {
+  font-family: Inter, Segoe UI, Roboto, sans-serif;
+}
+
